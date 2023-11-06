@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit converter</title>
+</head>
+<body>
+    <div class="unitbody"
+        style="padding: 1rem; width:40%; height:25rem; background-color: bisque; margin-left: 26rem; margin-top: 7rem;">
+        <h2 style="margin-left: 13rem;">Unit converter</h2></br></br>
+        <label style="font-size: larger; margin-left: 10rem;">Feet</label></br>
+        <input type="number" id="input1" placeholder="Feet" value="1"
+            style="margin-left: 10rem; width:15rem;"></br></br></br>
+        <label style="font-size: larger; margin-left: 10rem;">cm</label></br>
+        <input type="number" id="cm" placeholder="Centimeter" style="margin-left: 10rem; width:15rem;"></br></br></br>
+        <button onclick="feettocm()" style="margin-left: 15rem;">Click to convert</button>
+    </div>
+    <script>
+        function feettocm() {
+            input1 = document.getElementById("input1").value;
+            document.getElementById('cm').value = input1 / 0.032808;
+        }
+    </script>
+</body>
+
+</html>
